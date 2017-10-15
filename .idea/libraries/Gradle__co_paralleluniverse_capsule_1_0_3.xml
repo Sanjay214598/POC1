@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: co.paralleluniverse:capsule:1.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.paralleluniverse/capsule/1.0.3/9fe9147d3f8e334fc2e63462b5f3e4925f3e1b8b/capsule-1.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.paralleluniverse/capsule/1.0.3/6bb5d40c06161cfc55a29c4001a784401faa9bf/capsule-1.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.paralleluniverse/capsule/1.0.3/1bd17eeeef059035128408511480c2829c7ed839/capsule-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

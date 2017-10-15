@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: net.corda:node-schemas:0.11.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.corda/node-schemas/0.11.0/4ef711d92cd9aeb3dbcfa9d20b765d07d838bd9e/node-schemas-0.11.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.corda/node-schemas/0.11.0/a217a2625c042ac7c0520d28d02c1b4441d3a7d5/node-schemas-0.11.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.corda/node-schemas/0.11.0/98d8def5dc40d3fc09b54360ffaa0d3682bf6339/node-schemas-0.11.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

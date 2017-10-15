@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.contract.AgreementTransactionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-10-15T16:30:03" hostname="VAIO" time="0.119">
+  <properties/>
+  <testcase name="transactionMustHaveOneOutput" classname="com.example.contract.AgreementTransactionTest" time="0.084"/>
+  <testcase name="senderIsNotRecipient" classname="com.example.contract.AgreementTransactionTest" time="0.008"/>
+  <testcase name="recipientMustSignTransaction" classname="com.example.contract.AgreementTransactionTest" time="0.007"/>
+  <testcase name="transactionMustIncludeCreateCommand" classname="com.example.contract.AgreementTransactionTest" time="0.01"/>
+  <testcase name="senderMustSignTransaction" classname="com.example.contract.AgreementTransactionTest" time="0.008"/>
+  <system-out><![CDATA[AgreementContract verify com.example.state.AgreementState@441c6e2b
+AgreementContract verify com.example.state.AgreementState@14349cf8
+AgreementContract verify com.example.state.AgreementState@38d19db4
+State getParticipants MiniCorp
+AgreementContract verify com.example.state.AgreementState@78600410
+AgreementContract verify com.example.state.AgreementState@78600410
+State getParticipants MiniCorp
+AgreementContract verify com.example.state.AgreementState@46d5600c
+State getParticipants MiniCorp
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

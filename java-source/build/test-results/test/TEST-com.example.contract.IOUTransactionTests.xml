@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.contract.IOUTransactionTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-10-12T15:37:03" hostname="VAIO" time="0.14">
+  <properties/>
+  <testcase name="transactionMustHaveOneOutput" classname="com.example.contract.IOUTransactionTests" time="0.066"/>
+  <testcase name="transactionMustHaveNoInputs" classname="com.example.contract.IOUTransactionTests" time="0.029"/>
+  <testcase name="cannotCreateNegativeValueIOUs" classname="com.example.contract.IOUTransactionTests" time="0.01"/>
+  <testcase name="senderIsNotRecipient" classname="com.example.contract.IOUTransactionTests" time="0.01"/>
+  <testcase name="recipientMustSignTransaction" classname="com.example.contract.IOUTransactionTests" time="0.007"/>
+  <testcase name="transactionMustIncludeCreateCommand" classname="com.example.contract.IOUTransactionTests" time="0.007"/>
+  <testcase name="senderMustSignTransaction" classname="com.example.contract.IOUTransactionTests" time="0.007"/>
+  <system-out><![CDATA[IOUContract verify com.example.state.IOUState@1afb2d92
+IOUContract verify com.example.state.IOUState@1f85385
+IOUContract verify com.example.state.IOUState@3422cb4b
+State getParticipants MiniCorp
+IOUContract verify com.example.state.IOUState@18bc1bde
+IOUContract verify com.example.state.IOUState@5246d2c2
+State getParticipants MiniCorp
+IOUContract verify com.example.state.IOUState@d43cc45
+IOUContract verify com.example.state.IOUState@d43cc45
+State getParticipants MiniCorp
+IOUContract verify com.example.state.IOUState@3c9d05f9
+State getParticipants MiniCorp
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

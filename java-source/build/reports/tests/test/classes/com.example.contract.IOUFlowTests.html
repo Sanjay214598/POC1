@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.example.contract.IOUFlowTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.example.contract.IOUFlowTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.contract.html">com.example.contract</a> &gt; IOUFlowTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">8</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">27.940s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">flowRecordsATransactionInBothPartiesVaults</td>
+<td>1.000s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flowRejectsIOUsThatAreNotSignedByTheRecipient</td>
+<td>1.060s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flowRejectsIOUsThatAreNotSignedByTheSender</td>
+<td>18.603s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flowRejectsInvalidIOUStates</td>
+<td>1.100s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flowRejectsInvalidIOUs</td>
+<td>1.678s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">recordedTransactionHasNoInputsAndASingleOutputTheInputIOU</td>
+<td>1.195s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">signedTransactionReturnedByTheFlowIsSignedByTheAcceptor</td>
+<td>1.953s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">signedTransactionReturnedByTheFlowIsSignedByTheInitiator</td>
+<td>1.351s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2017-10-12 16:36:38,222 Test worker WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
+?[31mW 16:36:41 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:43 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:43 11 HikariDataSource.&lt;init&gt; - HikariPool-1 - Started.
+?[m?[37mI 16:36:44 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:44 11 HikariDataSource.&lt;init&gt; - HikariPool-2 - Started.
+?[m?[37mI 16:36:45 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:48 11 HikariDataSource.&lt;init&gt; - HikariPool-3 - Started.
+?[m?[37mI 16:36:48 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:48 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:48 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:48 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:48 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:48 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:49 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:49 11 Version.logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+?[m?[37mI 16:36:49 11 Environment.&lt;clinit&gt; - HHH000206: hibernate.properties not found
+?[m?[37mI 16:36:49 11 Version.&lt;clinit&gt; - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+?[m?[37mI 16:36:49 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:49 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:51 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@14d617c9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:51 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:51 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:51 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:51 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:51 11 HikariDataSource.&lt;init&gt; - HikariPool-4 - Started.
+?[m?[37mI 16:36:51 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:51 11 HikariDataSource.&lt;init&gt; - HikariPool-5 - Started.
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:52 11 HikariDataSource.&lt;init&gt; - HikariPool-6 - Started.
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryFlow$Client
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:52 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:52 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:52 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:52 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@35c38cc1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:52 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:52 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:52 11 HikariDataSource.&lt;init&gt; - HikariPool-7 - Started.
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:52 11 HikariDataSource.&lt;init&gt; - HikariPool-8 - Started.
+?[m?[37mI 16:36:52 11 HikariDataSource.&lt;init&gt; - HikariPool-9 - Started.
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:52 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:52 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:52 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:52 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c893c34] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:52 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:52 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:52 11 HikariDataSource.&lt;init&gt; - HikariPool-10 - Started.
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:52 11 HikariDataSource.&lt;init&gt; - HikariPool-11 - Started.
+?[m?[37mI 16:36:52 11 HikariDataSource.&lt;init&gt; - HikariPool-12 - Started.
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:52 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:52 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:52 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:52 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@d82a79f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:52 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:52 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:52 11 HikariDataSource.&lt;init&gt; - HikariPool-13 - Started.
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:52 11 HikariDataSource.&lt;init&gt; - HikariPool-14 - Started.
+?[m?[37mI 16:36:52 11 HikariDataSource.&lt;init&gt; - HikariPool-15 - Started.
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:52 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:52 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:52 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:52 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@31c5b7de] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:52 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:52 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[37mI 16:36:53 52 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 0 to network map
+?[m?[37mI 16:36:53 52 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 1 to network map
+?[m?[37mI 16:36:53 52 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 2 to network map
+?[m?[37mI 16:36:53 52 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 3 to network map
+?[m?[37mI 16:36:53 52 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 4 to network map
+?[mExampleFlow call 
+ExampleFlow notary.getName() ou=corda.notary.simple,Mock Company 1
+State getParticipants Mock Company 4
+ExampleFlow txCommand com.example.contract.IOUContract$Commands$Create@703e8f4d
+IOUContract verify com.example.state.IOUState@5ec41516
+State getParticipants Mock Company 4
+ExampleFlow txCommand []
+FlowLogic Just before sending SignedTransaction(id=0AE725456FBC47F1F57B18FA265680B1A777E9370349514C815FA493D9A6DDD4)
+Acceptor Call 
+?[1;31mE 16:36:53 52 [0bc000a1-1a25-4edb-9a89-852947e36d11].run - Flow finished with exception
+?[m net.corda.core.flows.FlowException: 0AE725456FBC47F1F57B18FA265680B1A777E9370349514C815FA493D9A6DDD4 failed signature checks
+	at com.example.flow.ExampleFlow$Acceptor.lambda$call$0(ExampleFlow.java:173) ~[main/:?]
+	at net.corda.core.utilities.UntrustworthyData.unwrap(UntrustworthyData.kt:24) ~[core-0.11.0.jar:?]
+	at com.example.flow.ExampleFlow$Acceptor.call(ExampleFlow.java:158) ~[main/:?]
+	at com.example.flow.ExampleFlow$Acceptor.call(ExampleFlow.java:113) ~[main/:?]
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.run(FlowStateMachineImpl.kt:127) [node-0.11.0.jar:?]
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.run(FlowStateMachineImpl.kt:41) [node-0.11.0.jar:?]
+	at co.paralleluniverse.fibers.Fiber.run1(Fiber.java:1067) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.Fiber.exec(Fiber.java:767) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.RunnableFiberTask.doExec(RunnableFiberTask.java:100) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.RunnableFiberTask.run(RunnableFiberTask.java:91) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_121]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_121]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_121]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at net.corda.node.utilities.AffinityExecutor$ServiceAffinityExecutor$1$thread$1.run(AffinityExecutor.kt:69) [node-0.11.0.jar:?]
+Caused by: net.corda.core.transactions.SignedTransaction$SignaturesMissingException
+	at net.corda.core.transactions.SignedTransaction.verifySignatures(SignedTransaction.kt:79) ~[core-0.11.0.jar:?]
+	at com.example.flow.ExampleFlow$Acceptor.lambda$call$0(ExampleFlow.java:166) ~[main/:?]
+	... 16 more
+?[1;31mE 16:36:53 52 [1a0926dc-dbe7-4b41-82ea-ab3f1956e651].run - Flow ended due to receiving exception
+?[m net.corda.core.flows.FlowException: 0AE725456FBC47F1F57B18FA265680B1A777E9370349514C815FA493D9A6DDD4 failed signature checks
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.erroredEnd(FlowStateMachineImpl.kt:363) ~[node-0.11.0.jar:?]
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.waitForLedgerCommit(FlowStateMachineImpl.kt:237) ~[node-0.11.0.jar:?]
+	at net.corda.core.flows.FlowLogic.waitForLedgerCommit(FlowLogic.kt:186) ~[core-0.11.0.jar:?]
+	at com.example.flow.ExampleFlow$Initiator.call(ExampleFlow.java:109) ~[main/:?]
+	at com.example.flow.ExampleFlow$Initiator.call(ExampleFlow.java:36) ~[main/:?]
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.run(FlowStateMachineImpl.kt:127) [node-0.11.0.jar:?]
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.run(FlowStateMachineImpl.kt:41) [node-0.11.0.jar:?]
+	at co.paralleluniverse.fibers.Fiber.run1(Fiber.java:1067) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.Fiber.exec(Fiber.java:767) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.RunnableFiberTask.doExec(RunnableFiberTask.java:100) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.RunnableFiberTask.run(RunnableFiberTask.java:91) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_121]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_121]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_121]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at net.corda.node.utilities.AffinityExecutor$ServiceAffinityExecutor$1$thread$1.run(AffinityExecutor.kt:69) [node-0.11.0.jar:?]
+Caused by: net.corda.core.transactions.SignedTransaction$SignaturesMissingException
+?[37mI 16:36:53 11 HikariPool.shutdown - HikariPool-1 - Close initiated...
+?[m?[37mI 16:36:53 11 HikariPool.shutdown - HikariPool-1 - Closed.
+?[m?[37mI 16:36:53 11 HikariPool.shutdown - HikariPool-4 - Close initiated...
+?[m?[37mI 16:36:53 11 HikariPool.shutdown - HikariPool-4 - Closed.
+?[m?[37mI 16:36:53 11 HikariPool.shutdown - HikariPool-7 - Close initiated...
+?[m?[37mI 16:36:53 11 HikariPool.shutdown - HikariPool-7 - Closed.
+?[m?[37mI 16:36:53 11 HikariPool.shutdown - HikariPool-10 - Close initiated...
+?[m?[37mI 16:36:53 11 HikariPool.shutdown - HikariPool-10 - Closed.
+?[m?[37mI 16:36:53 11 HikariPool.shutdown - HikariPool-13 - Close initiated...
+?[m?[37mI 16:36:53 11 HikariPool.shutdown - HikariPool-13 - Closed.
+?[m?[31mW 16:36:53 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:54 11 HikariDataSource.&lt;init&gt; - HikariPool-16 - Started.
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:54 11 HikariDataSource.&lt;init&gt; - HikariPool-17 - Started.
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:54 11 HikariDataSource.&lt;init&gt; - HikariPool-18 - Started.
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:54 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:54 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:54 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:54 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1d20cc31] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:54 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:54 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:54 11 HikariDataSource.&lt;init&gt; - HikariPool-19 - Started.
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:54 11 HikariDataSource.&lt;init&gt; - HikariPool-20 - Started.
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:54 11 HikariDataSource.&lt;init&gt; - HikariPool-21 - Started.
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryFlow$Client
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:54 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:54 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:54 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:54 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1df0bbc5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:54 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:54 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:54 11 HikariDataSource.&lt;init&gt; - HikariPool-22 - Started.
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:54 11 HikariDataSource.&lt;init&gt; - HikariPool-23 - Started.
+?[m?[37mI 16:36:54 11 HikariDataSource.&lt;init&gt; - HikariPool-24 - Started.
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:54 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:54 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:54 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:54 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@30ec969] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:54 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:54 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:54 11 HikariDataSource.&lt;init&gt; - HikariPool-25 - Started.
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:54 11 HikariDataSource.&lt;init&gt; - HikariPool-26 - Started.
+?[m?[37mI 16:36:54 11 HikariDataSource.&lt;init&gt; - HikariPool-27 - Started.
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:54 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:54 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:54 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:54 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:55 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@355d047f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:55 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:55 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:55 11 HikariDataSource.&lt;init&gt; - HikariPool-28 - Started.
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:55 11 HikariDataSource.&lt;init&gt; - HikariPool-29 - Started.
+?[m?[37mI 16:36:55 11 HikariDataSource.&lt;init&gt; - HikariPool-30 - Started.
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:55 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:55 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:55 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:55 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6657f492] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:55 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[37mI 16:36:55 96 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 0 to network map
+?[m?[37mI 16:36:55 96 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 1 to network map
+?[m?[37mI 16:36:55 96 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 2 to network map
+?[m?[37mI 16:36:55 96 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 3 to network map
+?[m?[37mI 16:36:55 96 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 4 to network map
+?[mExampleFlow call 
+ExampleFlow notary.getName() ou=corda.notary.simple,Mock Company 1
+State getParticipants Mock Company 2
+ExampleFlow txCommand com.example.contract.IOUContract$Commands$Create@53659169
+IOUContract verify com.example.state.IOUState@5e495636
+State getParticipants Mock Company 2
+?[1;31mE 16:36:55 96 [d734cbef-6536-41d9-adfa-ec947fa11085].run - Flow finished with exception
+?[m net.corda.core.contracts.TransactionVerificationException$ContractRejection: java.lang.IllegalArgumentException: Failed requirement: The IOU's value must be non-negative.
+	at net.corda.core.contracts.TransactionType$General.verifyContracts(TransactionTypes.kt:129) ~[core-0.11.0.jar:?]
+	at net.corda.core.contracts.TransactionType$General.verifyTransaction(TransactionTypes.kt:70) ~[core-0.11.0.jar:?]
+	at net.corda.core.contracts.TransactionType.verify(TransactionTypes.kt:26) ~[core-0.11.0.jar:?]
+	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:60) ~[core-0.11.0.jar:?]
+	at com.example.flow.ExampleFlow$Initiator.call(ExampleFlow.java:94) ~[main/:?]
+	at com.example.flow.ExampleFlow$Initiator.call(ExampleFlow.java:36) ~[main/:?]
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.run(FlowStateMachineImpl.kt:127) [node-0.11.0.jar:?]
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.run(FlowStateMachineImpl.kt:41) [node-0.11.0.jar:?]
+	at co.paralleluniverse.fibers.Fiber.run1(Fiber.java:1067) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.Fiber.exec(Fiber.java:767) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.RunnableFiberTask.doExec(RunnableFiberTask.java:100) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.RunnableFiberTask.run(RunnableFiberTask.java:91) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_121]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_121]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_121]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at net.corda.node.utilities.AffinityExecutor$ServiceAffinityExecutor$1$thread$1.run(AffinityExecutor.kt:69) [node-0.11.0.jar:?]
+Caused by: java.lang.IllegalArgumentException: Failed requirement: The IOU's value must be non-negative.
+	at net.corda.core.contracts.Requirements.using(ContractsDSL.kt:61) ~[core-0.11.0.jar:?]
+	at com.example.contract.IOUContract.lambda$verify$0(IOUContract.java:47) ~[main/:?]
+	at net.corda.core.contracts.ContractsDSL.requireThat(ContractsDSL.kt:72) ~[core-0.11.0.jar:?]
+	at com.example.contract.IOUContract.verify(IOUContract.java:34) ~[main/:?]
+	at net.corda.core.contracts.TransactionType$General.verifyContracts(TransactionTypes.kt:127) ~[core-0.11.0.jar:?]
+	... 18 more
+?[37mI 16:36:55 11 HikariPool.shutdown - HikariPool-16 - Close initiated...
+?[m?[37mI 16:36:55 11 HikariPool.shutdown - HikariPool-16 - Closed.
+?[m?[37mI 16:36:55 11 HikariPool.shutdown - HikariPool-19 - Close initiated...
+?[m?[37mI 16:36:55 11 HikariPool.shutdown - HikariPool-19 - Closed.
+?[m?[37mI 16:36:55 11 HikariPool.shutdown - HikariPool-22 - Close initiated...
+?[m?[37mI 16:36:55 11 HikariPool.shutdown - HikariPool-22 - Closed.
+?[m?[37mI 16:36:55 11 HikariPool.shutdown - HikariPool-25 - Close initiated...
+?[m?[37mI 16:36:55 11 HikariPool.shutdown - HikariPool-25 - Closed.
+?[m?[37mI 16:36:55 11 HikariPool.shutdown - HikariPool-28 - Close initiated...
+?[m?[37mI 16:36:55 11 HikariPool.shutdown - HikariPool-28 - Closed.
+?[m?[31mW 16:36:55 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:55 11 HikariDataSource.&lt;init&gt; - HikariPool-31 - Started.
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:55 11 HikariDataSource.&lt;init&gt; - HikariPool-32 - Started.
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:55 11 HikariDataSource.&lt;init&gt; - HikariPool-33 - Started.
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:55 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:55 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:55 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:55 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@47c6b7df] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:55 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:55 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:55 11 HikariDataSource.&lt;init&gt; - HikariPool-34 - Started.
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:55 11 HikariDataSource.&lt;init&gt; - HikariPool-35 - Started.
+?[m?[37mI 16:36:55 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:56 11 HikariDataSource.&lt;init&gt; - HikariPool-36 - Started.
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryFlow$Client
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:56 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:56 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:56 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:56 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6f7638de] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:56 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:56 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:56 11 HikariDataSource.&lt;init&gt; - HikariPool-37 - Started.
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:56 11 HikariDataSource.&lt;init&gt; - HikariPool-38 - Started.
+?[m?[37mI 16:36:56 11 HikariDataSource.&lt;init&gt; - HikariPool-39 - Started.
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:56 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:56 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:56 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:56 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@59c73c39] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:56 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:56 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:56 11 HikariDataSource.&lt;init&gt; - HikariPool-40 - Started.
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:56 11 HikariDataSource.&lt;init&gt; - HikariPool-41 - Started.
+?[m?[37mI 16:36:56 11 HikariDataSource.&lt;init&gt; - HikariPool-42 - Started.
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:56 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:56 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:56 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:56 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4d1b2d82] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:56 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:56 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:56 11 HikariDataSource.&lt;init&gt; - HikariPool-43 - Started.
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:56 11 HikariDataSource.&lt;init&gt; - HikariPool-44 - Started.
+?[m?[37mI 16:36:56 11 HikariDataSource.&lt;init&gt; - HikariPool-45 - Started.
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:56 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:56 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:56 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:56 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@723b7a6d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:56 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:56 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[37mI 16:36:56 137 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 0 to network map
+?[m?[37mI 16:36:56 137 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 1 to network map
+?[m?[37mI 16:36:56 137 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 2 to network map
+?[m?[37mI 16:36:56 137 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 3 to network map
+?[m?[37mI 16:36:56 137 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 4 to network map
+?[mExampleFlow call 
+ExampleFlow notary.getName() ou=corda.notary.simple,Mock Company 1
+State getParticipants Mock Company 2
+ExampleFlow txCommand com.example.contract.IOUContract$Commands$Create@7ab3a5b3
+IOUContract verify com.example.state.IOUState@79679ab6
+State getParticipants Mock Company 2
+ExampleFlow txCommand []
+FlowLogic Just before sending SignedTransaction(id=AF8C4798086237F0B31FE6139BC14057C84B2207B1395D6224A81B123B44EF4C)
+Acceptor Call 
+IOUContract verify com.example.state.IOUState@11bbe0c8
+State getParticipants Mock Company 2
+IOUContract verify com.example.state.IOUState@1a51a184
+State getParticipants Mock Company 2
+State getParticipants Mock Company 2
+State isRelevant Mock Company 2
+IOUContract verify com.example.state.IOUState@d9ed73e
+State getParticipants Mock Company 2
+State isRelevant Mock Company 2
+?[37mI 16:36:57 11 HikariPool.shutdown - HikariPool-31 - Close initiated...
+?[m?[37mI 16:36:57 11 HikariPool.shutdown - HikariPool-31 - Closed.
+?[m?[37mI 16:36:57 11 HikariPool.shutdown - HikariPool-34 - Close initiated...
+?[m?[37mI 16:36:57 11 HikariPool.shutdown - HikariPool-34 - Closed.
+?[m?[37mI 16:36:57 11 HikariPool.shutdown - HikariPool-37 - Close initiated...
+?[m?[37mI 16:36:57 11 HikariPool.shutdown - HikariPool-37 - Closed.
+?[m?[37mI 16:36:57 11 HikariPool.shutdown - HikariPool-40 - Close initiated...
+?[m?[37mI 16:36:57 11 HikariPool.shutdown - HikariPool-40 - Closed.
+?[m?[37mI 16:36:57 11 HikariPool.shutdown - HikariPool-43 - Close initiated...
+?[m?[37mI 16:36:57 11 HikariPool.shutdown - HikariPool-43 - Closed.
+?[m?[31mW 16:36:57 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:57 11 HikariDataSource.&lt;init&gt; - HikariPool-46 - Started.
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:57 11 HikariDataSource.&lt;init&gt; - HikariPool-47 - Started.
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:57 11 HikariDataSource.&lt;init&gt; - HikariPool-48 - Started.
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:57 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:57 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:57 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:57 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@69d1ced6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:57 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:57 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:57 11 HikariDataSource.&lt;init&gt; - HikariPool-49 - Started.
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:57 11 HikariDataSource.&lt;init&gt; - HikariPool-50 - Started.
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:57 11 HikariDataSource.&lt;init&gt; - HikariPool-51 - Started.
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryFlow$Client
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:57 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:57 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:57 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:57 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:58 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@44287d86] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:58 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:58 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:58 11 HikariDataSource.&lt;init&gt; - HikariPool-52 - Started.
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:58 11 HikariDataSource.&lt;init&gt; - HikariPool-53 - Started.
+?[m?[37mI 16:36:58 11 HikariDataSource.&lt;init&gt; - HikariPool-54 - Started.
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:58 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:58 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:58 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:58 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2ffd6ba4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:58 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:58 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:58 11 HikariDataSource.&lt;init&gt; - HikariPool-55 - Started.
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:58 11 HikariDataSource.&lt;init&gt; - HikariPool-56 - Started.
+?[m?[37mI 16:36:58 11 HikariDataSource.&lt;init&gt; - HikariPool-57 - Started.
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:58 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:58 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:58 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:58 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@348139a4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:58 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:58 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:58 11 HikariDataSource.&lt;init&gt; - HikariPool-58 - Started.
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:58 11 HikariDataSource.&lt;init&gt; - HikariPool-59 - Started.
+?[m?[37mI 16:36:58 11 HikariDataSource.&lt;init&gt; - HikariPool-60 - Started.
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:58 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:58 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:58 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:58 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@18663f88] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:58 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[37mI 16:36:58 178 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 0 to network map
+?[m?[37mI 16:36:58 178 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 1 to network map
+?[m?[37mI 16:36:58 178 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 2 to network map
+?[m?[37mI 16:36:58 178 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 3 to network map
+?[m?[37mI 16:36:58 178 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 4 to network map
+?[mExampleFlow call 
+ExampleFlow notary.getName() ou=corda.notary.simple,Mock Company 1
+State getParticipants Mock Company 2
+ExampleFlow txCommand com.example.contract.IOUContract$Commands$Create@5256d909
+IOUContract verify com.example.state.IOUState@71c95f5
+State getParticipants Mock Company 2
+ExampleFlow txCommand []
+FlowLogic Just before sending SignedTransaction(id=2636ACA9A41778C04351E9DC7143F47EA6FC42FAEC25F2FE52D68F3E6E80B158)
+Acceptor Call 
+IOUContract verify com.example.state.IOUState@2d087ff5
+State getParticipants Mock Company 2
+IOUContract verify com.example.state.IOUState@6899e276
+State getParticipants Mock Company 2
+State getParticipants Mock Company 2
+State isRelevant Mock Company 2
+IOUContract verify com.example.state.IOUState@457cd428
+State getParticipants Mock Company 2
+State isRelevant Mock Company 2
+?[37mI 16:36:58 11 HikariPool.shutdown - HikariPool-46 - Close initiated...
+?[m?[37mI 16:36:58 11 HikariPool.shutdown - HikariPool-46 - Closed.
+?[m?[37mI 16:36:58 11 HikariPool.shutdown - HikariPool-49 - Close initiated...
+?[m?[37mI 16:36:58 11 HikariPool.shutdown - HikariPool-49 - Closed.
+?[m?[37mI 16:36:58 11 HikariPool.shutdown - HikariPool-52 - Close initiated...
+?[m?[37mI 16:36:58 11 HikariPool.shutdown - HikariPool-52 - Closed.
+?[m?[37mI 16:36:58 11 HikariPool.shutdown - HikariPool-55 - Close initiated...
+?[m?[37mI 16:36:58 11 HikariPool.shutdown - HikariPool-55 - Closed.
+?[m?[37mI 16:36:58 11 HikariPool.shutdown - HikariPool-58 - Close initiated...
+?[m?[37mI 16:36:58 11 HikariPool.shutdown - HikariPool-58 - Closed.
+?[m?[31mW 16:36:58 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:58 11 HikariDataSource.&lt;init&gt; - HikariPool-61 - Started.
+?[m?[37mI 16:36:58 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:58 11 HikariDataSource.&lt;init&gt; - HikariPool-62 - Started.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:59 11 HikariDataSource.&lt;init&gt; - HikariPool-63 - Started.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:59 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:59 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:59 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:59 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@26bb0b0e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:59 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:59 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:59 11 HikariDataSource.&lt;init&gt; - HikariPool-64 - Started.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:59 11 HikariDataSource.&lt;init&gt; - HikariPool-65 - Started.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:59 11 HikariDataSource.&lt;init&gt; - HikariPool-66 - Started.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryFlow$Client
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:59 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:59 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:59 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:59 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5b7b9143] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:59 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:59 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:59 11 HikariDataSource.&lt;init&gt; - HikariPool-67 - Started.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:59 11 HikariDataSource.&lt;init&gt; - HikariPool-68 - Started.
+?[m?[37mI 16:36:59 11 HikariDataSource.&lt;init&gt; - HikariPool-69 - Started.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:59 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:59 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:59 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:59 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4e9e876f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:59 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:59 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:59 11 HikariDataSource.&lt;init&gt; - HikariPool-70 - Started.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:59 11 HikariDataSource.&lt;init&gt; - HikariPool-71 - Started.
+?[m?[37mI 16:36:59 11 HikariDataSource.&lt;init&gt; - HikariPool-72 - Started.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:59 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:59 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:59 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:59 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2eab6c49] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:59 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:36:59 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:36:59 11 HikariDataSource.&lt;init&gt; - HikariPool-73 - Started.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:36:59 11 HikariDataSource.&lt;init&gt; - HikariPool-74 - Started.
+?[m?[37mI 16:36:59 11 HikariDataSource.&lt;init&gt; - HikariPool-75 - Started.
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:36:59 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:59 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:36:59 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:36:59 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@61c10a12] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:36:59 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:36:59 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[37mI 16:36:59 222 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 0 to network map
+?[m?[37mI 16:36:59 222 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 1 to network map
+?[m?[37mI 16:36:59 222 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 2 to network map
+?[m?[37mI 16:36:59 222 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 3 to network map
+?[m?[37mI 16:36:59 222 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 4 to network map
+?[mExampleFlow call 
+ExampleFlow notary.getName() ou=corda.notary.simple,Mock Company 1
+State getParticipants Mock Company 2
+ExampleFlow txCommand com.example.contract.IOUContract$Commands$Create@55d9dde9
+IOUContract verify com.example.state.IOUState@1920669a
+State getParticipants Mock Company 2
+ExampleFlow txCommand []
+FlowLogic Just before sending SignedTransaction(id=FCDF589C3B6053D3561D39042B85C7D0FFC0D19E4989416AB1A2A4A1E93F9C8A)
+Acceptor Call 
+IOUContract verify com.example.state.IOUState@49900017
+State getParticipants Mock Company 2
+IOUContract verify com.example.state.IOUState@10ab3e2f
+State getParticipants Mock Company 2
+State getParticipants Mock Company 2
+State isRelevant Mock Company 2
+IOUContract verify com.example.state.IOUState@21996931
+State getParticipants Mock Company 2
+State isRelevant Mock Company 2
+?[37mI 16:37:00 11 HikariPool.shutdown - HikariPool-61 - Close initiated...
+?[m?[37mI 16:37:00 11 HikariPool.shutdown - HikariPool-61 - Closed.
+?[m?[37mI 16:37:00 11 HikariPool.shutdown - HikariPool-64 - Close initiated...
+?[m?[37mI 16:37:00 11 HikariPool.shutdown - HikariPool-64 - Closed.
+?[m?[37mI 16:37:00 11 HikariPool.shutdown - HikariPool-67 - Close initiated...
+?[m?[37mI 16:37:00 11 HikariPool.shutdown - HikariPool-67 - Closed.
+?[m?[37mI 16:37:00 11 HikariPool.shutdown - HikariPool-70 - Close initiated...
+?[m?[37mI 16:37:00 11 HikariPool.shutdown - HikariPool-70 - Closed.
+?[m?[37mI 16:37:00 11 HikariPool.shutdown - HikariPool-73 - Close initiated...
+?[m?[37mI 16:37:00 11 HikariPool.shutdown - HikariPool-73 - Closed.
+?[m?[31mW 16:37:00 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:00 11 HikariDataSource.&lt;init&gt; - HikariPool-76 - Started.
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:00 11 HikariDataSource.&lt;init&gt; - HikariPool-77 - Started.
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:00 11 HikariDataSource.&lt;init&gt; - HikariPool-78 - Started.
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:00 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:00 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:00 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:00 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1d19fb3b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:00 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:37:00 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:00 11 HikariDataSource.&lt;init&gt; - HikariPool-79 - Started.
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:00 11 HikariDataSource.&lt;init&gt; - HikariPool-80 - Started.
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:00 11 HikariDataSource.&lt;init&gt; - HikariPool-81 - Started.
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryFlow$Client
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:00 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:00 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:00 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:00 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1769d874] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:00 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:37:00 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:00 11 HikariDataSource.&lt;init&gt; - HikariPool-82 - Started.
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:00 11 HikariDataSource.&lt;init&gt; - HikariPool-83 - Started.
+?[m?[37mI 16:37:00 11 HikariDataSource.&lt;init&gt; - HikariPool-84 - Started.
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:00 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:00 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:00 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:00 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@54770a5b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:00 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:37:00 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:00 11 HikariDataSource.&lt;init&gt; - HikariPool-85 - Started.
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:00 11 HikariDataSource.&lt;init&gt; - HikariPool-86 - Started.
+?[m?[37mI 16:37:00 11 HikariDataSource.&lt;init&gt; - HikariPool-87 - Started.
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:00 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:00 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:00 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:00 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@38eece38] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:00 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:00 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:37:00 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-88 - Started.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-89 - Started.
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-90 - Started.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:01 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:01 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:01 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:01 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5908e828] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:01 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[37mI 16:37:01 263 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 0 to network map
+?[m?[37mI 16:37:01 263 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 1 to network map
+?[m?[37mI 16:37:01 263 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 2 to network map
+?[m?[37mI 16:37:01 263 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 3 to network map
+?[m?[37mI 16:37:01 263 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 4 to network map
+?[mExampleFlow call 
+ExampleFlow notary.getName() ou=corda.notary.simple,Mock Company 1
+State getParticipants Mock Company 2
+ExampleFlow txCommand com.example.contract.IOUContract$Commands$Create@2b315a40
+IOUContract verify com.example.state.IOUState@3a096531
+?[1;31mE 16:37:01 263 [ce21aa54-1fed-4f57-9b33-93db9da7a78b].run - Flow finished with exception
+?[m net.corda.core.contracts.TransactionVerificationException$ContractRejection: java.lang.IllegalArgumentException: Failed requirement: The sender and the recipient cannot be the same entity.
+	at net.corda.core.contracts.TransactionType$General.verifyContracts(TransactionTypes.kt:129) ~[core-0.11.0.jar:?]
+	at net.corda.core.contracts.TransactionType$General.verifyTransaction(TransactionTypes.kt:70) ~[core-0.11.0.jar:?]
+	at net.corda.core.contracts.TransactionType.verify(TransactionTypes.kt:26) ~[core-0.11.0.jar:?]
+	at net.corda.core.transactions.LedgerTransaction.verify(LedgerTransaction.kt:60) ~[core-0.11.0.jar:?]
+	at com.example.flow.ExampleFlow$Initiator.call(ExampleFlow.java:94) ~[main/:?]
+	at com.example.flow.ExampleFlow$Initiator.call(ExampleFlow.java:36) ~[main/:?]
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.run(FlowStateMachineImpl.kt:127) [node-0.11.0.jar:?]
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.run(FlowStateMachineImpl.kt:41) [node-0.11.0.jar:?]
+	at co.paralleluniverse.fibers.Fiber.run1(Fiber.java:1067) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.Fiber.exec(Fiber.java:767) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.RunnableFiberTask.doExec(RunnableFiberTask.java:100) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.RunnableFiberTask.run(RunnableFiberTask.java:91) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_121]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_121]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_121]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at net.corda.node.utilities.AffinityExecutor$ServiceAffinityExecutor$1$thread$1.run(AffinityExecutor.kt:69) [node-0.11.0.jar:?]
+Caused by: java.lang.IllegalArgumentException: Failed requirement: The sender and the recipient cannot be the same entity.
+	at net.corda.core.contracts.Requirements.using(ContractsDSL.kt:61) ~[core-0.11.0.jar:?]
+	at com.example.contract.IOUContract.lambda$verify$0(IOUContract.java:41) ~[main/:?]
+	at net.corda.core.contracts.ContractsDSL.requireThat(ContractsDSL.kt:72) ~[core-0.11.0.jar:?]
+	at com.example.contract.IOUContract.verify(IOUContract.java:34) ~[main/:?]
+	at net.corda.core.contracts.TransactionType$General.verifyContracts(TransactionTypes.kt:127) ~[core-0.11.0.jar:?]
+	... 18 more
+?[37mI 16:37:01 11 HikariPool.shutdown - HikariPool-76 - Close initiated...
+?[m?[37mI 16:37:01 11 HikariPool.shutdown - HikariPool-76 - Closed.
+?[m?[37mI 16:37:01 11 HikariPool.shutdown - HikariPool-79 - Close initiated...
+?[m?[37mI 16:37:01 11 HikariPool.shutdown - HikariPool-79 - Closed.
+?[m?[37mI 16:37:01 11 HikariPool.shutdown - HikariPool-82 - Close initiated...
+?[m?[37mI 16:37:01 11 HikariPool.shutdown - HikariPool-82 - Closed.
+?[m?[37mI 16:37:01 11 HikariPool.shutdown - HikariPool-85 - Close initiated...
+?[m?[37mI 16:37:01 11 HikariPool.shutdown - HikariPool-85 - Closed.
+?[m?[37mI 16:37:01 11 HikariPool.shutdown - HikariPool-88 - Close initiated...
+?[m?[37mI 16:37:01 11 HikariPool.shutdown - HikariPool-88 - Closed.
+?[m?[31mW 16:37:01 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-91 - Started.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-92 - Started.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-93 - Started.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:01 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:01 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:01 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:01 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@769235f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:01 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:37:01 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-94 - Started.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-95 - Started.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-96 - Started.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryFlow$Client
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:01 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:01 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:01 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:01 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2ebb4c0d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:01 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:37:01 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-97 - Started.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-98 - Started.
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-99 - Started.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:01 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:01 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:01 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:01 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@15faca21] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:01 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:37:01 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-100 - Started.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-101 - Started.
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-102 - Started.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:01 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:01 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:01 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:01 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@212dfab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:01 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:37:01 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-103 - Started.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-104 - Started.
+?[m?[37mI 16:37:01 11 HikariDataSource.&lt;init&gt; - HikariPool-105 - Started.
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:01 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:02 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:02 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:02 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:02 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@36d57a11] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:02 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[37mI 16:37:02 306 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 0 to network map
+?[m?[37mI 16:37:02 306 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 1 to network map
+?[m?[37mI 16:37:02 306 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 2 to network map
+?[m?[37mI 16:37:02 306 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 3 to network map
+?[m?[37mI 16:37:02 306 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 4 to network map
+?[mExampleFlow call 
+ExampleFlow notary.getName() ou=corda.notary.simple,Mock Company 1
+State getParticipants Mock Company 2
+ExampleFlow txCommand com.example.contract.IOUContract$Commands$Create@5f901174
+IOUContract verify com.example.state.IOUState@4007c239
+State getParticipants Mock Company 2
+ExampleFlow txCommand []
+FlowLogic Just before sending SignedTransaction(id=DC0924C9E58157DA9319029A752E0CA1E63ED59AF31FD1BA92D8E21B460FF749)
+Acceptor Call 
+?[1;31mE 16:37:02 306 [e48b79d1-f205-4b2e-ad02-a6572ddb2d50].run - Flow finished with exception
+?[m net.corda.core.flows.FlowException: DC0924C9E58157DA9319029A752E0CA1E63ED59AF31FD1BA92D8E21B460FF749 failed signature checks
+	at com.example.flow.ExampleFlow$Acceptor.lambda$call$0(ExampleFlow.java:173) ~[main/:?]
+	at net.corda.core.utilities.UntrustworthyData.unwrap(UntrustworthyData.kt:24) ~[core-0.11.0.jar:?]
+	at com.example.flow.ExampleFlow$Acceptor.call(ExampleFlow.java:158) ~[main/:?]
+	at com.example.flow.ExampleFlow$Acceptor.call(ExampleFlow.java:113) ~[main/:?]
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.run(FlowStateMachineImpl.kt:127) [node-0.11.0.jar:?]
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.run(FlowStateMachineImpl.kt:41) [node-0.11.0.jar:?]
+	at co.paralleluniverse.fibers.Fiber.run1(Fiber.java:1067) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.Fiber.exec(Fiber.java:767) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.RunnableFiberTask.doExec(RunnableFiberTask.java:100) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.RunnableFiberTask.run(RunnableFiberTask.java:91) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_121]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_121]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_121]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at net.corda.node.utilities.AffinityExecutor$ServiceAffinityExecutor$1$thread$1.run(AffinityExecutor.kt:69) [node-0.11.0.jar:?]
+Caused by: net.corda.core.transactions.SignedTransaction$SignaturesMissingException
+	at net.corda.core.transactions.SignedTransaction.verifySignatures(SignedTransaction.kt:79) ~[core-0.11.0.jar:?]
+	at com.example.flow.ExampleFlow$Acceptor.lambda$call$0(ExampleFlow.java:166) ~[main/:?]
+	... 16 more
+?[1;31mE 16:37:02 306 [6f901082-9f20-4923-a6de-f456aea1944e].run - Flow ended due to receiving exception
+?[m net.corda.core.flows.FlowException: DC0924C9E58157DA9319029A752E0CA1E63ED59AF31FD1BA92D8E21B460FF749 failed signature checks
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.erroredEnd(FlowStateMachineImpl.kt:363) ~[node-0.11.0.jar:?]
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.waitForLedgerCommit(FlowStateMachineImpl.kt:237) ~[node-0.11.0.jar:?]
+	at net.corda.core.flows.FlowLogic.waitForLedgerCommit(FlowLogic.kt:186) ~[core-0.11.0.jar:?]
+	at com.example.flow.ExampleFlow$Initiator.call(ExampleFlow.java:109) ~[main/:?]
+	at com.example.flow.ExampleFlow$Initiator.call(ExampleFlow.java:36) ~[main/:?]
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.run(FlowStateMachineImpl.kt:127) [node-0.11.0.jar:?]
+	at net.corda.node.services.statemachine.FlowStateMachineImpl.run(FlowStateMachineImpl.kt:41) [node-0.11.0.jar:?]
+	at co.paralleluniverse.fibers.Fiber.run1(Fiber.java:1067) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.Fiber.exec(Fiber.java:767) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.RunnableFiberTask.doExec(RunnableFiberTask.java:100) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at co.paralleluniverse.fibers.RunnableFiberTask.run(RunnableFiberTask.java:91) [quasar-core-0.7.6-jdk8.jar:0.7.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_121]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_121]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_121]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_121]
+	at net.corda.node.utilities.AffinityExecutor$ServiceAffinityExecutor$1$thread$1.run(AffinityExecutor.kt:69) [node-0.11.0.jar:?]
+Caused by: net.corda.core.transactions.SignedTransaction$SignaturesMissingException
+?[37mI 16:37:02 11 HikariPool.shutdown - HikariPool-91 - Close initiated...
+?[m?[37mI 16:37:02 11 HikariPool.shutdown - HikariPool-91 - Closed.
+?[m?[37mI 16:37:02 11 HikariPool.shutdown - HikariPool-94 - Close initiated...
+?[m?[37mI 16:37:02 11 HikariPool.shutdown - HikariPool-94 - Closed.
+?[m?[37mI 16:37:02 11 HikariPool.shutdown - HikariPool-97 - Close initiated...
+?[m?[37mI 16:37:02 11 HikariPool.shutdown - HikariPool-97 - Closed.
+?[m?[37mI 16:37:02 11 HikariPool.shutdown - HikariPool-100 - Close initiated...
+?[m?[37mI 16:37:02 11 HikariPool.shutdown - HikariPool-100 - Closed.
+?[m?[37mI 16:37:02 11 HikariPool.shutdown - HikariPool-103 - Close initiated...
+?[m?[37mI 16:37:02 11 HikariPool.shutdown - HikariPool-103 - Closed.
+?[m?[31mW 16:37:02 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-106 - Started.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-107 - Started.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-108 - Started.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:02 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:02 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:02 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:02 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@56bc54f1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:02 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:37:02 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-109 - Started.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-110 - Started.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-111 - Started.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryFlow$Client
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:02 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:02 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:02 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:02 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@21460a23] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:02 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:37:02 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-112 - Started.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-113 - Started.
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-114 - Started.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:02 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:02 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:02 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:02 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3d7664de] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:02 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:37:02 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-115 - Started.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-116 - Started.
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-117 - Started.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:02 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:02 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:02 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:02 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6b912225] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:02 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[31mW 16:37:02 11 MockNetwork$MockNode.start - Corda node is running in dev mode.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.start - Node starting up ...
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-118 - Started.
+?[m?[37mI 16:37:02 11 MockNetwork$MockNode.initialiseDatabasePersistence - Connected to h2 database.
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-119 - Started.
+?[m?[37mI 16:37:02 11 HikariDataSource.&lt;init&gt; - HikariPool-120 - Started.
+?[m?[37mI 16:37:03 11 MockNetwork$MockNode.obtainKeyPair - Identity key not found, generating fresh key!
+?[m?[37mI 16:37:03 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow com.example.flow.ExampleFlow$Initiator
+?[m?[37mI 16:37:03 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.NotaryChangeFlow$Instigator
+?[m?[37mI 16:37:03 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchTransactionsFlow
+?[m?[37mI 16:37:03 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.FetchAttachmentsFlow
+?[m?[37mI 16:37:03 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.BroadcastTransactionFlow
+?[m?[37mI 16:37:03 11 HibernateObserver.makeSessionFactoryForSchema - Creating session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:03 11 ConnectionProviderInitiator.initiateService - HHH000130: Instantiating explicit connection provider: net.corda.node.services.schema.HibernateObserver$NodeDatabaseConnectionProvider
+?[m?[37mI 16:37:03 11 Dialect.&lt;init&gt; - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[m?[37mI 16:37:03 11 access.getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2494a441] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+?[m?[37mI 16:37:03 11 HibernateObserver.makeSessionFactoryForSchema - Created session factory for schema CashSchemaV1(name=net.corda.schemas.CashSchema, version=1)
+?[m?[37mI 16:37:03 11 MockNetwork$MockNode.registerFlowInitiator - Registering flow net.corda.flows.ContractUpgradeFlow$Instigator
+?[m?[37mI 16:37:03 347 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 0 to network map
+?[m?[37mI 16:37:03 347 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 1 to network map
+?[m?[37mI 16:37:03 347 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 2 to network map
+?[m?[37mI 16:37:03 347 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 3 to network map
+?[m?[37mI 16:37:03 347 AbstractNetworkMapService.processRegistrationRequest - Added node Mock Company 4 to network map
+?[mExampleFlow call 
+ExampleFlow notary.getName() ou=corda.notary.simple,Mock Company 1
+State getParticipants Mock Company 2
+ExampleFlow txCommand com.example.contract.IOUContract$Commands$Create@512203e1
+IOUContract verify com.example.state.IOUState@57d3b501
+State getParticipants Mock Company 2
+ExampleFlow txCommand []
+FlowLogic Just before sending SignedTransaction(id=5FDFE7044BA4DCE0C024FA080F69EE9F8DBF8CA6E1F10C8B4056F31EF61CDE59)
+Acceptor Call 
+IOUContract verify com.example.state.IOUState@5ca1839d
+State getParticipants Mock Company 2
+IOUContract verify com.example.state.IOUState@2561825c
+State getParticipants Mock Company 2
+State getParticipants Mock Company 2
+State isRelevant Mock Company 2
+IOUContract verify com.example.state.IOUState@39e6c8ac
+State getParticipants Mock Company 2
+State isRelevant Mock Company 2
+?[37mI 16:37:03 11 HikariPool.shutdown - HikariPool-106 - Close initiated...
+?[m?[37mI 16:37:03 11 HikariPool.shutdown - HikariPool-106 - Closed.
+?[m?[37mI 16:37:03 11 HikariPool.shutdown - HikariPool-109 - Close initiated...
+?[m?[37mI 16:37:03 11 HikariPool.shutdown - HikariPool-109 - Closed.
+?[m?[37mI 16:37:03 11 HikariPool.shutdown - HikariPool-112 - Close initiated...
+?[m?[37mI 16:37:03 11 HikariPool.shutdown - HikariPool-112 - Closed.
+?[m?[37mI 16:37:03 11 HikariPool.shutdown - HikariPool-115 - Close initiated...
+?[m?[37mI 16:37:03 11 HikariPool.shutdown - HikariPool-115 - Closed.
+?[m?[37mI 16:37:03 11 HikariPool.shutdown - HikariPool-118 - Close initiated...
+?[m?[37mI 16:37:03 11 HikariPool.shutdown - HikariPool-118 - Closed.
+?[m</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>QUASAR WARNING: Assertions enabled. This may harm performance.
+QUASAR WARNING: Fibers are set to verify instrumentation. This may *severely* harm performance.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.4.1</a> at 12 Oct, 2017 4:37:03 PM</p>
+</div>
+</div>
+</body>
+</html>

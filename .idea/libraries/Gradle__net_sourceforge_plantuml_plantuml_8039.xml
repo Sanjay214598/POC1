@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: net.sourceforge.plantuml:plantuml:8039">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.plantuml/plantuml/8039/888b2550c07df24e672638dca1e79481f1b4cd5e/plantuml-8039.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.plantuml/plantuml/8039/8216e9eb2a09291bacdeb18db1d1a4339b2891e5/plantuml-8039-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.plantuml/plantuml/8039/8cb1db3560f4f2d285e5e29c9c3cbf47fb24598/plantuml-8039-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
